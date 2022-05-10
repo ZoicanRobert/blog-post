@@ -25,8 +25,22 @@
                     <li class="nav-menu-item">CONTACT</li>
                 </ul>
             </nav>
-            <button class="add-article-button"><i class="fa fa-plus"></i>Add Article</button>
+            <button id="add-article-button"><i class="fa fa-plus"></i>Add Article</button>
         </header>
+
+        <div id="modalContainer" class="modal">
+            <h1 class="title modal-title">Add / Edit Element</h1>
+            <div class="input-container">
+                <input type="text" class="small-input" id="places" placeholder="Please enter "/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter title"/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter author"/>
+                <input type="text" class="small-input" id="places" placeholder="Please enter date"/>
+                <input type="text" class="long-input" id="places" placeholder="Please enter image url"/>
+                <input type="text" class="text-input" id="places" placeholder="Please enter content"/>
+            </div>
+            <button class="modal-button" id="modal-cancel-button">CANCEL</button>
+            <button class="modal-button">SAVE</button>
+        </div>
         
         <main>
             <article class="article">
@@ -103,5 +117,19 @@
             <button class="footer-button">next</button>
         </footer>
     </div>
+
+    <script>
+        var modal = document.getElementById("modalContainer");
+        var btn = document.getElementById("add-article-button");
+        var closebtn = document.getElementById("modal-button");
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }   
+
+        closebtn.onclick = function(event) {
+                modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

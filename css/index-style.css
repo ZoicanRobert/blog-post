@@ -61,7 +61,7 @@ html {
     color: #1e1e1e;
     cursor: pointer;
 }
-.add-article-button{
+#add-article-button{
     margin-top: 130px;
     border: 1px inside #9b9b9b;
     width: 300px;
@@ -142,4 +142,54 @@ footer{
     border: none;
     background-color: inherit;
     cursor: pointer;
+}
+
+#modalContainer{
+    width: 1000px;
+    height: 750px;
+    position: fixed;
+    z-index: 1;
+    top: calc(50% - 375px);
+    left: calc(50% - 500px);
+    display: none;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #9b9b9b;
+    box-shadow: 0px 0px 26px 6px;
+}
+.modal-title{
+    margin: 50px 0;
+}
+.input-container{
+    margin-top: 50px;
+}
+.input-container input{
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    color: #9b9b9b;  
+    font-family: 'Cardo', serif;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.small-input{
+    width: 400px;
+}
+.small-input:nth-child(even){
+    margin-left:50px;
+}
+.long-input{
+    width: 850px;
+}
+.text-input{
+    width: 850px;
+    height: 280px;
+}
+.modal-button{
+    background-color: inherit;
+    width: 200px;
+    padding:15px 10px;
+    border-radius: 50px;
+}
+#modal-cancel-button{
+    margin-right: 450px;
 }
